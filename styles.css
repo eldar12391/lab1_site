@@ -1,0 +1,252 @@
+/* Общие стили */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Селектор ID для логотипа */
+#logo {
+    color: #ff6600;
+    font-size: 28px;
+    margin: 0;
+}
+
+/* Селектор ID для копирайта */
+#copyright {
+    text-align: center;
+    color: #fff;
+    margin: 0;
+}
+
+/* Header */
+header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Селектор класса для меню */
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.menu li {
+    display: inline;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+/* Псевдокласс :hover для ссылок меню */
+.menu a:hover {
+    background-color: #34495e;
+}
+
+/* Псевдокласс для активной ссылки */
+.menu a.active {
+    background-color: #ff6600;
+}
+
+/* Hero section */
+.hero {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+/* Селектор класса для выделенного текста */
+.highlight {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Main content */
+main {
+    padding: 40px 0;
+}
+
+.info, .bets-section {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h3 {
+    color: #2c3e50;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    border-bottom: 3px solid #ff6600;
+    padding-bottom: 10px;
+}
+
+/* Псевдокласс :first-of-type */
+h3:first-of-type {
+    margin-top: 0;
+}
+
+/* Списки */
+.sports-list, .advantages-list, .bet-types, .strategies-list {
+    margin: 20px 0;
+    padding-left: 30px;
+}
+
+.sports-list li, .advantages-list li, .bet-types li, .strategies-list li {
+    margin: 10px 0;
+    padding: 5px;
+}
+
+/* Псевдокласс :nth-child для полосатых списков */
+.sports-list li:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+
+.advantages-list li:nth-child(even) {
+    background-color: #f0f0f0;
+}
+
+/* Изображения */
+.image-container {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.main-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Таблицы */
+.odds-table, .schedule-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.odds-table th, .odds-table td,
+.schedule-table th, .schedule-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+}
+
+.odds-table th, .schedule-table th {
+    background-color: #2c3e50;
+    color: white;
+    font-weight: bold;
+}
+
+/* Псевдокласс :hover для строк таблицы */
+.odds-table tbody tr:hover,
+.schedule-table tbody tr:hover {
+    background-color: #f5f5f5;
+}
+
+/* Селектор класса для коэффициентов */
+.coefficient {
+    font-weight: bold;
+    color: #ff6600;
+    font-size: 18px;
+}
+
+/* Псевдокласс :first-child для первой ячейки */
+.odds-table tbody td:first-child,
+.schedule-table tbody td:first-child {
+    font-weight: bold;
+    text-align: left;
+}
+
+/* Секция загрузки */
+.download-section {
+    background-color: #ecf0f1;
+    padding: 25px;
+    border-radius: 8px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.download-link {
+    display: inline-block;
+    background-color: #ff6600;
+    color: white;
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 15px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+/* Псевдокласс :hover для ссылки скачивания */
+.download-link:hover {
+    background-color: #e55a00;
+    transform: scale(1.05);
+}
+
+/* Псевдокласс :active для ссылки скачивания */
+.download-link:active {
+    transform: scale(0.98);
+}
+
+/* Footer */
+footer {
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+/* Псевдокласс :last-child для последнего элемента списка */
+.strategies-list li:last-child {
+    border-bottom: 2px solid #ff6600;
+    padding-bottom: 10px;
+}
+
+/* Псевдокласс :visited для посещенных ссылок */
+.menu a:visited {
+    color: #ccc;
+}
+
+/* Псевдокласс :focus для активных элементов */
+.download-link:focus {
+    outline: 3px solid #764ba2;
+    outline-offset: 3px;
+}
